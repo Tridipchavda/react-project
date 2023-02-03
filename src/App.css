@@ -1,38 +1,261 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchInput{
   display: flex;
-  flex-direction: column;
+  background-color: rgb(241, 241, 241);
+  width: 500px;
+  height: 30px;
+  padding: 0px 10px;
+}
+.mNav{
+  display: none;
+}
+.brand{
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+}
+.search{
+  outline: none;
+  border: none;
+  flex: 1;
+  background-color: rgb(240, 240, 240);
+}
+
+.header{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.contain{
+  height: 450px;
+  width: 100%;
+  position: relative;
+  background-color: grey;
+
+}
+.contain img{
+  width: 100%;
+  height: 450px;
+  display: block;
+  object-fit: fill;
+  filter: opacity(0.8);
+}
+.writeDown{
+  position: absolute;
+  top:320px;
+  left: 80px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sideNavbar{
+  background-color: white;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dropbtn{
+  background-color: rgb(230, 230, 230);
+  color: black;
+}
+
+.feed{
+  width: 60rem;
+}
+
+.allOver{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.connections{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+}
+
+.followBtn{
+  height: 30px;
+  width: 80px;
+  padding-top: -10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: rgb(65, 65, 255);
+}
+
+.signUpDialog{
+  width: 1100px;
+}
+
+.closeBtn{
+  color: white;
+  float: right;
+  background-color: white;
+}
+
+.mainDialog{
+  display: flex;
+  
+  width: 800px;
+  height: 600px;
+
+}
+.hidden{
+  display:none;
+  
+}
+.partition1{
+  width: 50%;
+}
+.partition2{
+  width: 50%;
+  margin-top: 20px;
+}
+.create{
+  margin: 30px 0px 0px 30px;
+}
+.popUpImg{
+  object-fit: fill;
+}
+
+.acc{
+  display: flex;
+  flex-direction: row;
+}
+
+.feedInfo{
+  display: flex;
+  flex-direction: row;
+}
+.InfoName{
+  margin-right: 60%;
+}
+
+@media(max-width:500px){
+  .contain{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: grey;
+  
   }
-  to {
-    transform: rotate(360deg);
+  .contain img{
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: fill;
+    filter: opacity(0.8);
+  }
+  .writeDown{
+    position: absolute;
+    top:130px;
+    left: 18px;
+    color: white;
+    font-size: 10px;
+  } 
+  .writeDown h1{
+    font-size: 12px;
+  }
+  .signUpDialog{
+    width: 600px;
+    background-color: white;
+  }
+  .mainDialog{
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    height: 60px;
+  
+  }
+  input{
+    width: 10px;
+    height: 30px;
+  }
+  button{
+    height: 40px;
+    font-size: 12px;
+  }
+  .partition1{
+    width:100%;
+  }
+  .partition2{
+    display: none;
+  }
+  .sideNavbar{
+    background-color: white;
+    width: 80%;
+  }
+  
+  .dropbtn{
+    background-color: rgb(230, 230, 230);
+    color: black;
+  }
+  
+  .feed{
+    width: 20rem;
+  }
+
+  .navbar img{
+    width: 10px;
+    height: 10px;
+  }
+  .allOver{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  
+  .connections{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+  }
+  .feedInfo{
+    display: flex;
+    width: 400px;
+  }
+  .feedInfo p{
+    font-size: 12px;
+  }
+  .feedInfo button{
+    width: 30px;
+    height: 30px;
+    padding:0px;
+  }
+  .feedInfo button img{
+    width: 20px;
+    height: 20px;
+  }
+  .InfoName{
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .ahref{
+    display: flex;
+  }
+  .mNav p{
+    padding: 0;
+    margin: 0px 10px;
+    margin-right: 150px;
+    font-size: 12px;
+  }
+  .mNav button{
+    width: 100px;
+    height: 20px;
+    font-size: 10px;
+    padding: 2px;
+    margin: 0px 5px;
+  }
+  .mNav button a{
+    color: white;
+    text-decoration: none;
+  }
+  .navbar{
+    display: none;
+  }
+  .mNav{
+    display: flex;
+    
+  }
+  .hiddenLogIn{
+    display: flex;
   }
 }

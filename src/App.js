@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar';
+import LandingImage from './Components/LandingImage';
+import SideNavbar from './Components/SideNavbar';
+import PostFeed from './Components/PostFeed';
+import SignUpPopUp from './Components/SignUpPopUp';
+import LogInPopUp from './Components/LogInPopUp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <LandingImage/>
+      <SideNavbar/>
+      <center>
+        <PostFeed/>
+      </center>
+      <SignUpPopUp/>
+      <LogInPopUp/>
     </div>
   );
 }
