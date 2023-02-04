@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Tridipchavda/react-project.git/static/css/main.51a42d7c.css",
+    "main.js": "/Tridipchavda/react-project.git/static/js/main.cd722f57.js",
+    "static/js/787.c76f41ac.chunk.js": "/Tridipchavda/react-project.git/static/js/787.c76f41ac.chunk.js",
+    "static/media/background.jpg": "/Tridipchavda/react-project.git/static/media/background.f6314e82adad79967d03.jpg",
+    "static/media/back.svg": "/Tridipchavda/react-project.git/static/media/back.6ac434496f4301e32390a5b02512e825.svg",
+    "static/media/logo.svg": "/Tridipchavda/react-project.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Tridipchavda/react-project.git/index.html",
+    "static/media/share.svg": "/Tridipchavda/react-project.git/static/media/share.918b8c397310d2691cb20635266fcd72.svg",
+    "main.51a42d7c.css.map": "/Tridipchavda/react-project.git/static/css/main.51a42d7c.css.map",
+    "main.cd722f57.js.map": "/Tridipchavda/react-project.git/static/js/main.cd722f57.js.map",
+    "787.c76f41ac.chunk.js.map": "/Tridipchavda/react-project.git/static/js/787.c76f41ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51a42d7c.css",
+    "static/js/main.cd722f57.js"
+  ]
+}
