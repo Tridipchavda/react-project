@@ -44,6 +44,7 @@ app.post("/getData",(req,res)=>{
         console.log(flag);
         res.send(flag);
     })
+    
 })
 
 
@@ -59,8 +60,6 @@ app.post("/addComment",(req,res)=>{
         if(err==null){
             const getCommentQuery = `SELECT * FROM b_feed WHERE feed_id=${id}`;;
     
-            var result="";
-        
             db.query(getCommentQuery,(err,result)=>{
                 var updatedComments =  parseInt(result[0].n_comments) + 1;
                 console.log(updatedComments);
@@ -75,7 +74,7 @@ app.post("/addComment",(req,res)=>{
         }
     })
     
-    res.end("er");
+    res.end("Add Comment Successfully");
 });
 app.post("/likeThePost",(req,res)=>{
 
@@ -84,7 +83,6 @@ app.post("/likeThePost",(req,res)=>{
 
     const getLikeQuery = `SELECT * FROM b_feed WHERE feed_id=${id}`;;
     
-    var result="";
 
     db.query(getLikeQuery,(err,result)=>{
         var updatedLikes =  parseInt(result[0].n_likes) + 1;
@@ -150,7 +148,8 @@ app.post("/insertPost",(req,res)=>{
     db.query(insertQuery,[username,info],(err,result)=>{
         console.log(err);
     })
-    res.end("er");
+    send = JSON.stringify({"username":username,"Info":info});
+    res.end(send);
 
 })
 
@@ -189,7 +188,8 @@ app.post("/",(req,res)=>{
     db.query(insertQuery,[username,email,password],(err,result)=>{
         console.log(err);
     })
-    res.end("er");
+    res.send("Data Inserted");
+    // res.end("er");
 
 })
 
